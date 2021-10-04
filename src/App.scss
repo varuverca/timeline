@@ -98,6 +98,12 @@ $lightgreen: #e1f3d7;
   content: none;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  .labels-nearby .step-wrapper:not(:first-child):nth-last-child(-n+2):before{
+    width: calc(100% - .875em * 2);
+  }
+}
+
 .labels-between .step-wrapper:last-child:not(:only-child){
   padding-right: calc(.875em + var(--indent));
 }
